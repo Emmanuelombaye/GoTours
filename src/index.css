@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --accent: #075985; --muted: #64748b; }
+html,body,#root { height:100%; }
+body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background-color: #F6F3EE; }
+/* account for fixed header */
+body { padding-top: 72px; }
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Card image zoom on hover */
+.card-img { transition: transform 260ms cubic-bezier(.2,.8,.2,1); }
+.card:hover .card-img { transform: scale(1.03); }
+
+/* Lazy image states (small blur-up effect) */
+.lazy-loading { filter: blur(6px) saturate(0.9); transform: scale(1.02); }
+.lazy-loaded { filter: none; transition: filter 320ms ease, transform 320ms ease; }
+
+/* Make skip link visible when focused */
+.sr-only:focus, .sr-only:active, .sr-only:focus-visible {
+	position: static !important;
+	width: auto !important;
+	height: auto !important;
+	overflow: visible !important;
+	clip: auto !important;
+	clip-path: none !important;
+	white-space: normal !important;
+}
+
+/* Card lift */
+.card { transition: transform 160ms cubic-bezier(.2,.8,.2,1), box-shadow 160ms; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 16px 44px rgba(2,6,23,0.10); }
+
+/* Small adjustments for accessibility */
+.focus-ring:focus { outline: 3px solid rgba(7,89,133,0.12); outline-offset: 3px; }
+
+/* Grid density helpers */
+.grid-dense { grid-auto-rows: 1fr; }
+
+/* Micro-interactions and reduced-motion support */
+@media (prefers-reduced-motion: reduce) {
+	* { transition-duration: 0ms !important; animation-duration: 0ms !important; }
+	.card, .card-img, .cta-bounce { transform: none !important; }
+}
+
+/* Small micro interaction: subtle image overlay on hover */
+.card .overlay { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.06)); pointer-events:none; }
+.card .meta { transition: opacity 200ms ease; }
+.card:hover .meta { opacity: 0.95; }
+
+/* Rating badge + price pill styles */
+.card .rating-badge { font-size:12px; padding:4px 6px; border-radius:6px; }
+.card .price-pill { display:inline-flex; align-items:center; gap:6px; padding:6px 8px; border-radius:8px; }
+
+/* Review snippet overlay */
+.review-overlay { position:absolute; left:0; right:0; bottom:0; background:rgba(255,255,255,0.96); padding:12px; transform: translateY(8px); opacity:0; transition: all 220ms ease; pointer-events:none; border-top:1px solid rgba(2,6,23,0.04); }
+.card:hover .review-overlay, .card:focus-within .review-overlay { transform: translateY(0); opacity:1; pointer-events:auto; }
+.review-overlay .text-sm { line-height:1.2 }

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Villa — GoToursBooking</title>
+        <meta name="description" content="Villa detail with gallery, amenities and booking widget." />
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    </head>
+    <body class="font-inter bg-sand-100 text-gray-900">
+        <header class="fixed w-full z-40 bg-white/40 backdrop-blur-sm">
+            <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+                <a href="index.html" class="flex items-center gap-2 text-ocean-600 font-semibold"><i class="ph-fill ph-palm-tree"></i>GoToursBooking</a>
+                <nav class="hidden md:flex gap-4"><a href="index.html">Home</a><a href="listing.html">Listings</a></nav>
+            </div>
+        </header>
+
+        <main class="max-w-6xl mx-auto px-6 pt-28 pb-16">
+            <div class="grid lg:grid-cols-2 gap-8">
+                <section>
+                    <h1 class="text-3xl font-bold mb-2" data-aos="fade-right">Luxury Beachfront Villa with Private Pool</h1>
+                    <div class="text-sm text-gray-500 mb-4" data-aos="fade-right" data-aos-delay="80">4.98 · 85 reviews · Diani Beach, Ukunda</div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                        <img data-light src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1600&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://via.placeholder.com/1200x800?text=GoToursBooking'" class="col-span-2 h-64 object-cover rounded-lg" alt="Main view" data-aos="zoom-in">
+                        <img data-light src="https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x600?text=GoToursBooking'" class="h-32 object-cover rounded-lg" alt="Bedroom" data-aos="fade-up" data-aos-delay="80">
+                        <img data-light src="https://images.unsplash.com/photo-1563911302283-d2bc129e7c1f?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x600?text=GoToursBooking'" class="h-32 object-cover rounded-lg" alt="Terrace" data-aos="fade-up" data-aos-delay="120">
+                        <img data-light src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=1200&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x600?text=GoToursBooking'" class="h-32 object-cover rounded-lg" alt="Pool" data-aos="fade-up" data-aos-delay="160">
+                    </div>
+
+                    <div class="prose max-w-none text-gray-700" data-aos="fade-up" data-aos-delay="200">
+                        <h2>About this villa</h2>
+                        <p>An elegant Swahili-style villa offering private chef, garden and access to the white sands. Perfect for families and groups.</p>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 mt-6" data-aos="fade-left">
+                        <div class="bg-white p-4 rounded-lg shadow text-center"><i class="ph ph-bed text-ocean-600"></i><div class="font-semibold mt-2">4 Bedrooms</div></div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center"><i class="ph ph-waves text-ocean-600"></i><div class="font-semibold mt-2">Beachfront</div></div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center"><i class="ph ph-check-circle text-green-500"></i><div class="font-semibold mt-2">Self check-in</div></div>
+                    </div>
+
+                    <section class="mt-8">
+                        <h3 class="text-lg font-semibold mb-3" data-aos="fade-up">Guest reviews</h3>
+                        <div class="space-y-3">
+                            <div class="bg-white p-3 rounded-lg shadow flex items-center gap-3" data-aos="fade-up" data-aos-delay="60"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=1200&auto=format&fit=crop" class="w-12 h-12 rounded-full object-cover" alt="Amina" onerror="this.onerror=null;this.src='https://via.placeholder.com/48?text=GT'"><div><strong>Amina</strong><div class="text-sm text-gray-500">"Amazing stay with attentive staff"</div></div><div class="ml-auto font-bold">4.9</div></div>
+                        </div>
+                    </section>
+                </section>
+
+                <aside class="sticky top-28">
+                    <div class="bg-white p-4 rounded-lg shadow" data-aos="fade-left">
+                        <div class="flex items-center justify-between mb-3"><div class="text-xl font-bold">Ksh 25,000</div><div class="text-sm text-gray-500">/ night</div></div>
+                        <form aria-label="Booking form" class="space-y-3">
+                            <input type="date" class="w-full rounded-lg border px-3 py-2" aria-label="Check-in">
+                            <input type="date" class="w-full rounded-lg border px-3 py-2" aria-label="Check-out">
+                            <select class="w-full rounded-lg border px-3 py-2"><option>1 guest</option><option>2 guests</option></select>
+                            <button class="w-full bg-ocean-600 text-white py-2 rounded-lg open-booking">Reserve</button>
+                        </form>
+                        <div class="text-sm text-gray-500 mt-2">You won't be charged yet</div>
+                    </div>
+
+                    <div class="bg-white p-3 rounded-lg shadow mt-4" data-aos="fade-up">
+                        <div id="map" style="height:220px; border-radius:8px; overflow:hidden;"></div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <div id="lightbox" class="lightbox" aria-hidden="true" style="display:none;"><button class="lb-close">×</button><img src="" alt="" class="lightbox-img"></div>
+        <div id="booking-modal" class="modal" aria-hidden="true" style="display:none;"><div class="modal-content max-w-md mx-auto p-6 bg-white rounded"><button class="modal-close">Close</button><h3>Booking</h3><p>Demo flow</p></div></div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+            try {
+                const map = L.map('map').setView([-4.3167, 39.5833], 12);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+                L.marker([-4.3167,39.5833]).addTo(map).bindPopup('Diani Beach');
+            } catch (e) { console.warn('Leaflet not available', e); }
+        </script>
+    </body>
+</html>

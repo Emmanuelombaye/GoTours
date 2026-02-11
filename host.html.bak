@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Host - GoToursBooking</title>
+    <meta name="description" content="List your property on GoToursBooking and reach travelers across the Kenyan coast. Easy setup and local support.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Specific styles for Host Page */
+        .host-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            height: 85vh;
+            padding: 0;
+            max-width: 1760px;
+            margin: 0 auto;
+        }
+
+        .host-hero-content {
+            padding: 80px;
+        }
+
+        .host-hero-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--accent) 0%, var(--ocean-600) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .est-earnings {
+            font-size: 48px;
+            font-weight: 800;
+            margin: 24px 0;
+            color: var(--text-main);
+        }
+
+        .slider-container {
+            margin: 32px 0;
+        }
+
+        .slider {
+            width: 100%;
+            height: 6px;
+            background: #ddd;
+            border-radius: 4px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--accent);
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .setup-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+            padding: 80px 40px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .step-item h3 {
+            margin: 16px 0 8px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <i class="ph-fill ph-palm-tree"></i>
+                <span style="color:var(--ocean-600)">GoToursBooking</span>
+            </a>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation"><i class="ph ph-list"></i></button>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="listing.html">Listings</a>
+                <a href="about.html">About</a>
+                <a href="host.html" class="host-link">Become a Host</a>
+            </nav>
+
+            <div class="user-menu">
+                <a href="#" class="host-link" style="color:var(--text-main)">Ready to setup?</a>
+                <button class="booking-btn"
+                    style="width: auto; padding: 12px 24px; margin-left: 16px; background: linear-gradient(90deg, var(--accent), var(--ocean-600));">
+                    <i class="ph ph-house-line" style="margin-right:8px"></i> Start Setup
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="max-width: 100%; padding: 0;">
+        <!-- Hero Split -->
+        <div class="host-hero">
+            <div class="host-hero-content">
+                <h1 style="font-size: 54px; line-height: 1.1; margin-bottom: 24px;">
+                    GoToursBooking it.<br>
+                    <span class="gradient-text">You could earn</span>
+                </h1>
+
+                <div class="est-earnings">
+                    Ksh <span id="earning-val">85,000</span> <span
+                        style="font-size: 18px; color: var(--text-secondary); font-weight: 400;">/ month</span>
+                </div>
+
+                <div class="slider-container">
+                    <input type="range" min="1" max="30" value="7" class="slider" id="night-slider">
+                    <p style="margin-top: 16px; color: var(--text-secondary); font-weight: 600;">
+                        <span id="night-val">7</span> nights at an estimated Ksh 12,000/night
+                    </p>
+                </div>
+
+                <button class="booking-btn" style="width: 200px; background: linear-gradient(90deg, #FF385C, #BD1E59);">
+                    Get Started
+                </button>
+            </div>
+            <img loading="lazy" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
+                class="host-hero-img" alt="Host Interior" onerror="this.onerror=null;this.src='https://via.placeholder.com/1200x900?text=GoToursBooking'">
+        </div>
+
+        <!-- Easy Setup Section -->
+        <div style="background: #f7f7f7;">
+            <div class="setup-grid">
+                <div class="step-item">
+                    <h2 style="font-size: 40px; margin-bottom: 24px;">GoToursBooking Setup is easy</h2>
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2070&auto=format&fit=crop"
+                        style="width:100%; border-radius:12px; margin-top:24px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/800x600?text=GoToursBooking'">
+                </div>
+                <div
+                    style="grid-column: span 2; display: flex; flex-direction: column; justify-content: center; gap: 40px;">
+                    <div style="display: flex; gap: 24px;">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--primary);">1</div>
+                        <div>
+                            <h3>One-to-one guidance from a Superhost</h3>
+                            <p style="color: var(--text-secondary);">We’ll match you with a Superhost in your area,
+                                who’ll guide you from your first question to your first guest—by phone, video call, or
+                                chat.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 24px;">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--primary);">2</div>
+                        <div>
+                            <h3>An experienced guest for your first booking</h3>
+                            <p style="color: var(--text-secondary);">For your first booking, you can choose to welcome
+                                an experienced guest who has at least three stays and a good track record.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 24px;">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--primary);">3</div>
+                        <div>
+                            <h3>Specialized support from GoToursBooking</h3>
+                            <p style="color: var(--text-secondary);">New hosts get one-tap access to specially trained
+                                Community Support agents who can help with everything from account issues to billing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div
+            style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
+            <div>
+                <h4 style="margin-bottom: 16px;">Support</h4>
+                <div
+                    style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; color: var(--text-main);">
+                    <a href="#" style="text-decoration:none; color:inherit;">Help Center</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">AirCover</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">Anti-discrimination</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">Disability support</a>
+                </div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 16px;">Hosting</h4>
+                <div
+                    style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; color: var(--text-main);">
+                    <a href="#" style="text-decoration:none; color:inherit;">List your home</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">AirCover for Hosts</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">Hosting resources</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">Community forum</a>
+                </div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 16px;">GoToursBooking</h4>
+                <div
+                    style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; color: var(--text-main);">
+                    <a href="#" style="text-decoration:none; color:inherit;">Newsroom</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">New features</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">Careers</a>
+                    <a href="#" style="text-decoration:none; color:inherit;">Investors</a>
+                </div>
+            </div>
+        </div>
+        <div
+            style="max-width: 1280px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); font-size: 14px;">
+            <p>© 2026 GoToursBooking Kenya, Inc. · <a href="#" style="color:inherit">Privacy</a> · <a href="#"
+                style="color:inherit">Terms</a> · <a href="#" style="color:inherit">Sitemap</a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

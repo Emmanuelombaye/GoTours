@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Diani Beach Villa",
+    "location": "Diani, Ukunda",
+    "guests": 4,
+    "bedrooms": 4,
+    "price": 25000,
+    "amenities": ["pool","chef","beachfront"],
+    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1600&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "Watamu Luxury Suite",
+    "location": "Watamu, Kilifi",
+    "guests": 2,
+    "bedrooms": 1,
+    "price": 18500,
+    "amenities": ["wifi","chef"],
+    "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=1600&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Nyali Penthouse",
+    "location": "Nyali, Mombasa",
+    "guests": 3,
+    "bedrooms": 2,
+    "price": 12000,
+    "amenities": ["wifi"],
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1600&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Malindi Swahili Villa",
+    "location": "Malindi, Kilifi",
+    "guests": 6,
+    "bedrooms": 3,
+    "price": 35000,
+    "amenities": ["pool","beachfront"],
+    "image": "https://images.unsplash.com/photo-1519046904884-53103b34b271?q=80&w=1600&auto=format&fit=crop"
+  }
+]

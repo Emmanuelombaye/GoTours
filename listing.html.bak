@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Listings — GoToursBooking</title>
+    <meta name="description" content="Browse villas in Ukunda — filter and quick preview." />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body class="font-inter bg-sand-100 text-gray-900">
+    <header class="fixed w-full top-0 bg-white/40 backdrop-blur-sm z-40">
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <a href="index.html" class="flex items-center gap-2 text-ocean-600 font-semibold"><i class="ph-fill ph-palm-tree"></i>GoToursBooking</a>
+        <button class="mobile-toggle md:hidden p-2 rounded-md focus-ring" aria-label="Open navigation"><i class="ph ph-list"></i></button>
+        <nav class="hidden md:flex gap-4 text-sm"><a href="index.html">Home</a><a href="listing.html">Listings</a><a href="about.html">About</a></nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pt-28 pb-16">
+      <div class="flex gap-6">
+        <!-- Filter panel -->
+        <aside class="w-72 hidden lg:block" data-aos="fade-right">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="font-semibold mb-3">Filters</h3>
+            <label class="text-sm font-medium">Max price (Ksh)</label>
+            <input id="price-range" type="range" min="0" max="50000" value="50000" class="w-full mt-2" />
+            <div class="text-xs text-gray-500 mt-1">Up to <span id="price-val">50,000</span></div>
+
+            <label class="text-sm font-medium mt-4">Bedrooms</label>
+            <select id="bedrooms-select" class="w-full mt-2 rounded-lg border px-3 py-2"><option value="0">Any</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option></select>
+
+            <label class="text-sm font-medium mt-4">Amenities</label>
+            <div class="flex flex-wrap gap-2 mt-2">
+              <button data-amenity="pool" class="amenity-btn px-3 py-1 bg-gray-100 rounded">Pool</button>
+              <button data-amenity="chef" class="amenity-btn px-3 py-1 bg-gray-100 rounded">Chef</button>
+              <button data-amenity="wifi" class="amenity-btn px-3 py-1 bg-gray-100 rounded">Wi‑Fi</button>
+              <button data-amenity="beachfront" class="amenity-btn px-3 py-1 bg-gray-100 rounded">Beachfront</button>
+            </div>
+            <button id="reset-filters" class="mt-4 w-full bg-gray-100 text-gray-700 py-2 rounded-lg">Reset</button>
+          </div>
+        </aside>
+
+        <section class="flex-1">
+          <div class="flex items-center justify-between mb-4">
+            <h1 class="text-2xl font-semibold">Villas in Ukunda</h1>
+            <div class="text-sm text-gray-500">Showing <strong>8</strong> stays</div>
+          </div>
+
+          <div id="listings-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" aria-live="polite">
+            <!-- Listings rendered by main.js -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="quick-view-modal" class="modal" aria-hidden="true" style="display:none;"><div class="modal-content max-w-3xl mx-auto p-6 bg-white rounded"><button class="modal-close">Close</button><h3>Quick View</h3></div></div>
+    <div id="lightbox" class="lightbox" aria-hidden="true" style="display:none;"><button class="lb-close">×</button><img src="" alt="" class="lightbox-img"></div>
+    <div id="booking-modal" class="modal" aria-hidden="true" style="display:none;"><div class="modal-content max-w-md mx-auto p-6 bg-white rounded"><button class="modal-close">Close</button><h3>Complete your booking</h3></div></div>
+
+    <div class="floating-cta"><button class="cta-bounce px-4 py-2 bg-ocean-600 text-white rounded-full open-booking">Book a Villa</button></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
