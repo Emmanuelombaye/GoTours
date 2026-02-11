@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Ukunda Villas — Frontend demo
 
 This is a Vite + React + Tailwind + Framer Motion frontend prototype for a clean, Airbnb-style villa listings homepage.
@@ -50,3 +51,6 @@ npm run preview
 ```
 
 - To deploy to GitHub Pages, build then push the `dist` folder to the `gh-pages` branch or use a static host (Netlify, Vercel). Example with `gh-pages` package is left as an exercise.
+=======
+# GoTours
+>>>>>>> b8c9ae15f5b40c94ca607998a080f1d771e8c437
