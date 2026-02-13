@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import Nav from './components/Nav'
 import MobileBottomNav from './components/MobileBottomNav'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import Listings from './pages/Listings'
 import VillaDetail from './pages/VillaDetail'
@@ -26,8 +27,10 @@ export default function App() {
           <Route path="/host" element={<Host />} />
           <Route path="*" element={<div className="p-8">Page not found. Go <Link to="/">home</Link>.</div>} />
         </Routes>
+
       </main>
+      <Footer />
       <MobileBottomNav />
-    </div>
+    </div >
   )
 }

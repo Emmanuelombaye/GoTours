@@ -21,30 +21,32 @@ const Gallery = ({ images = [], gallery = {}, onOpenPhotos }) => {
     return (
         <div className="relative group">
             <div
-                className="grid grid-cols-1 md:grid-cols-4 gap-2 h-[300px] md:h-[480px] rounded-xl overflow-hidden shadow-sm cursor-pointer"
+                className="grid grid-cols-1 md:grid-cols-4 gap-2 h-[300px] md:h-[460px] rounded-2xl overflow-hidden shadow-sm cursor-pointer"
                 onClick={onOpenPhotos}
             >
                 {/* Large Main Image */}
-                <div className="md:col-span-2 h-full overflow-hidden relative">
+                <div className="md:col-span-2 h-full relative overflow-hidden">
+                    <div className="absolute inset-0 bg-slate-200 animate-pulse" />
                     <motion.img
-                        whileHover={{ scale: 1.03 }}
-                        transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.5 }}
                         src={mainImage}
                         alt="Villa main"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover relative z-10"
                     />
                 </div>
 
                 {/* Small Images Grid */}
                 <div className="hidden md:grid grid-cols-2 grid-rows-2 col-span-2 gap-2 h-full">
                     {subImages.map((src, idx) => (
-                        <div key={idx} className="overflow-hidden relative h-full">
+                        <div key={idx} className="relative h-full overflow-hidden">
+                            <div className="absolute inset-0 bg-slate-200 animate-pulse" />
                             <motion.img
                                 whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
+                                transition={{ duration: 0.5 }}
                                 src={src}
                                 alt={`Villa view ${idx + 1}`}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover relative z-10"
                             />
                         </div>
                     ))}

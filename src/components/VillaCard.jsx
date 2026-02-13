@@ -26,10 +26,10 @@ export default function VillaCard({ villa, onOpen, index = 0 }) {
   const reviewSnippet = villa.reviewSnippet ?? sampleSnippets[villa.id % sampleSnippets.length]
 
   return (
-    <motion.li className="card bg-white rounded-lg overflow-hidden" variants={item(index)} initial="hidden" animate="visible" custom={index} whileHover={shouldReduce ? {} : { y: -4 }} transition={{ duration: 0.18, ease: 'easeOut' }} role="article" aria-label={villa.title}>
+    <motion.li className="group cursor-pointer" variants={item(index)} initial="hidden" animate="visible" custom={index} role="article" aria-label={villa.title}>
       <div className="w-full text-left">
         <Link to={`/villa/${villa.id}`} className="block">
-          <div className="relative aspect-square w-full">
+          <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-gray-200">
             <LazyImage src={villa.image} alt={villa.title} className="w-full h-full object-cover card-img" />
             <div className="overlay" aria-hidden />
 

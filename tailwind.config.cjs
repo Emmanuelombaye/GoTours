@@ -18,6 +18,15 @@ module.exports = {
         'soft': '0 8px 30px rgba(2,6,23,0.08)',
         'soft-md': '0 12px 34px rgba(2,6,23,0.10)'
       }
+    },
+    animation: {
+      shimmer: 'shimmer 1.5s infinite linear',
+    },
+    keyframes: {
+      shimmer: {
+        '0%': { backgroundPosition: '-1000px 0' },
+        '100%': { backgroundPosition: '1000px 0' },
+      }
     }
   },
   plugins: []

@@ -14,6 +14,50 @@
       "Luxe",
       "Trending"
     ],
+    "coordinates": {
+      "lat": -4.279,
+      "lng": 39.593
+    },
+    "host": {
+      "name": "Emmanuel",
+      "image": "/images/host.jpg",
+      "superhost": true,
+      "joined": "2021"
+    },
+    "reviews": [
+      {
+        "id": 101,
+        "user": "Sarah",
+        "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
+        "date": "October 2024",
+        "rating": 5,
+        "text": "The villa is absolutely stunning! The pool area is perfect for relaxing, and the beach is just a short walk away. Emmanuel was a fantastic host."
+      },
+      {
+        "id": 102,
+        "user": "Michael",
+        "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+        "date": "September 2024",
+        "rating": 5,
+        "text": "Great location and beautiful architecture. The solar backup was a lifesaver during the power cuts. Highly recommend!"
+      },
+      {
+        "id": 103,
+        "user": "Jessica",
+        "avatar": "https://randomuser.me/api/portraits/women/68.jpg",
+        "date": "August 2024",
+        "rating": 4.5,
+        "text": "We had a wonderful stay. The kitchen is fully equipped and the staff were very helpful. A bit of noise from the road but otherwise perfect."
+      },
+      {
+        "id": 104,
+        "user": "David",
+        "avatar": "https://randomuser.me/api/portraits/men/85.jpg",
+        "date": "July 2024",
+        "rating": 5,
+        "text": "A true gem in Diani. The photos don't do it justice. Will definitely be back!"
+      }
+    ],
     "image": "/images/villas/villa-1/exterior-1.jpg",
     "gallery": {
       "Exterior": [

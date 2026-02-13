@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link, useLocation } from 'react-router-dom'
+import SearchExpanded from './SearchExpanded'
 // Logo component
 const Logo = ({ scrolled }) => {
   return (
@@ -98,6 +99,8 @@ const ServicesIconCustom = ({ active }) => (
 // Nav component
 export default function Nav({ query, setQuery, guests, setGuests }) {
   const [scrolled, setScrolled] = useState(false)
+  const [expanded, setExpanded] = useState(false)
+  const [userMenuOpen, setUserMenuOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 120)
@@ -116,23 +119,23 @@ export default function Nav({ query, setQuery, guests, setGuests }) {
   return (
     <motion.header
       animate={{
-        boxShadow: scrolled ? '0 8px 30px rgba(2,6,23,0.06)' : 'none',
-        height: scrolled ? 80 : 110,
-        backgroundColor: scrolled ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,1)',
+        boxShadow: scrolled && !expanded ? '0 8px 30px rgba(2,6,23,0.06)' : 'none',
+        height: expanded ? 180 : (scrolled ? 80 : 110),
+        backgroundColor: scrolled || expanded ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,1)',
       }}
       transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
-      className={`fixed w-full z-50 top-0 left-0 transition-colors ${scrolled ? 'backdrop-blur-md border-b border-gray-100' : ''}`}
+      className={`fixed w-full z-50 top-0 left-0 transition-colors ${scrolled && !expanded ? 'backdrop-blur-md border-b border-gray-100' : ''}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative z-50">
         {/* Left: Logo */}
         <div className="flex-1 lg:flex-none">
-          <Logo scrolled={scrolled} />
+          <Logo scrolled={scrolled || expanded} />
         </div>
 
         {/* Center: Navigation */}
         <div className="flex-1 flex justify-center min-w-0 px-4">
           <AnimatePresence mode="wait">
-            {!scrolled ? (
+            {!scrolled && !expanded ? (
               <motion.nav
                 key="nav-links"
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -174,56 +177,38 @@ export default function Nav({ query, setQuery, guests, setGuests }) {
                 </Link>
               </motion.nav>
             ) : (
-              <motion.div
-                key="search-pill"
-                initial={{ opacity: 0, scale: 0.8, y: 10 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.8, y: 10 }}
-                transition={{ duration: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
-                className="flex items-center bg-white border border-gray-200 rounded-full shadow-sm hover:shadow-md transition-shadow py-1.5 pl-5 pr-2 gap-3"
-              >
-                {/* Search pill content remains the same */}
-                <div className="flex flex-col border-r border-gray-100 pr-4 max-w-[140px] relative group/input">
-                  <span className="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Where</span>
-                  <div className="relative flex items-center">
-                    <input
-                      type="text"
-                      value={query}
-                      onChange={(e) => setQuery(e.target.value)}
-                      placeholder="Search destination"
-                      className="text-xs font-semibold text-gray-800 bg-transparent border-none p-0 focus:ring-0 placeholder:text-gray-400 truncate pr-5 w-full"
-                    />
-                    {query && (
-                      <button
-                        onClick={() => setQuery('')}
-                        className="absolute right-0 p-1 text-gray-400 hover:text-ocean-600 transition-colors"
-                      >
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                      </button>
-                    )}
+              !expanded && (
+                <motion.div
+                  key="search-pill"
+                  layoutId="search-pill"
+                  onClick={() => setExpanded(true)}
+                  initial={{ opacity: 0, scale: 0.8, y: 10 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.8, y: 10 }}
+                  transition={{ duration: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
+                  className="flex items-center bg-white border border-gray-200 rounded-full shadow-sm hover:shadow-md transition-shadow py-1.5 pl-5 pr-2 gap-3 cursor-pointer"
+                >
+                  {/* Search pill content remains the same */}
+                  <div className="flex flex-col border-r border-gray-100 pr-4 max-w-[140px] relative group/input">
+                    <span className="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Where</span>
+                    <div className="text-xs font-semibold text-gray-800 truncate pr-5 w-full">
+                      {query || 'Search destination'}
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col pr-2">
-                  <span className="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Who</span>
-                  <div className="flex items-center gap-1">
-                    <input
-                      type="number"
-                      min={1}
-                      value={guests}
-                      onChange={(e) => setGuests(e.target.value)}
-                      className="text-xs font-semibold text-gray-800 bg-transparent border-none p-0 focus:ring-0 w-6"
-                    />
-                    <span className="text-[10px] text-gray-500">Guests</span>
+                  <div className="flex flex-col pr-2">
+                    <span className="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Who</span>
+                    <div className="flex items-center gap-1">
+                      <span className="text-xs font-semibold text-gray-800">{guests}</span>
+                      <span className="text-[10px] text-gray-500">Guests</span>
+                    </div>
                   </div>
-                </div>
-                <button className="bg-ocean-600 text-white p-2 rounded-full hover:bg-ocean-700 transition-colors">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </button>
-              </motion.div>
+                  <button className="bg-ocean-600 text-white p-2 rounded-full hover:bg-ocean-700 transition-colors">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                </motion.div>
+              )
             )}
           </AnimatePresence>
         </div>
@@ -233,18 +218,49 @@ export default function Nav({ query, setQuery, guests, setGuests }) {
           <Link to="/host" className="hidden lg:block text-xs font-bold text-gray-700 hover:bg-gray-50 px-4 py-3 rounded-full transition-colors">
             List your villa
           </Link>
-          <div className="flex items-center border border-gray-200 p-1.5 rounded-full hover:shadow-md transition-shadow bg-white gap-3 pl-3 cursor-pointer">
-            <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 overflow-hidden border border-gray-50">
-              <svg className="w-5 h-5 translate-y-0.5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+          <div className="relative">
+            <div
+              onClick={() => setUserMenuOpen(!userMenuOpen)}
+              className="flex items-center border border-gray-200 p-1.5 rounded-full hover:shadow-md transition-shadow bg-white gap-3 pl-3 cursor-pointer"
+            >
+              <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
+              <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 overflow-hidden border border-gray-50">
+                <svg className="w-5 h-5 translate-y-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+              </div>
             </div>
+
+            <AnimatePresence>
+              {userMenuOpen && (
+                <>
+                  <div className="fixed inset-0 z-10" onClick={() => setUserMenuOpen(false)}></div>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.9, y: 10 }}
+                    className="absolute right-0 top-12 w-[240px] bg-white rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-gray-100 py-2 z-20 overflow-hidden"
+                  >
+                    <div className="flex flex-col">
+                      <Link to="#" className="px-4 py-3 hover:bg-gray-50 text-sm font-bold text-gray-900">Sign up</Link>
+                      <Link to="#" className="px-4 py-3 hover:bg-gray-50 text-sm text-gray-600">Log in</Link>
+                      <div className="h-[1px] bg-gray-200 my-2"></div>
+                      <Link to="/host" className="px-4 py-3 hover:bg-gray-50 text-sm text-gray-600">Airbnb your home</Link>
+                      <Link to="#" className="px-4 py-3 hover:bg-gray-50 text-sm text-gray-600">Help Center</Link>
+                    </div>
+                  </motion.div>
+                </>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </div>
+
+      {/* Expanded Search Overlay */}
+      <SearchExpanded active={expanded} onClose={() => setExpanded(false)} />
+
     </motion.header>
   )
 }
