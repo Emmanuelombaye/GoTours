@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Hero from '../components/Hero'
+import Categories from '../components/Categories'
 import Filters from '../components/Filters'
 import VillaCard from '../components/VillaCard'
 import Modal from '../components/Modal'
@@ -11,6 +12,7 @@ import { container } from '../motion/variants'
 export default function Home({ showFilters = false, query, setQuery, guests, setGuests }) {
 	const [sort, setSort] = useState('recommended')
 	const [filters, setFilters] = useState({ minPrice: 5000, maxPrice: 50000, bedrooms: 0, guests: 1, freeWifi: false })
+	const [activeCategory, setActiveCategory] = useState('All')
 	const [selected, setSelected] = useState(null)
 	const [page, setPage] = useState(1)
 	const [data, setData] = useState(villasData)
@@ -19,9 +21,25 @@ export default function Home({ showFilters = false, query, setQuery, guests, set
 
 	const villas = useMemo(() => data, [data])
 	const filtered = useMemo(() => {
-		if (!query) return villas
-		return villas.filter(v => v.title.toLowerCase().includes(query.toLowerCase()) || v.location.toLowerCase().includes(query.toLowerCase()))
-	}, [villas, query])
+		let filteredVillas = villas
+
+		// 1. Text Search
+		if (query) {
+			filteredVillas = filteredVillas.filter(v =>
+				v.title.toLowerCase().includes(query.toLowerCase()) ||
+				v.location.toLowerCase().includes(query.toLowerCase())
+			)
+		}
+
+		// 2. Category Filter
+		if (activeCategory !== 'All') {
+			filteredVillas = filteredVillas.filter(v =>
+				v.categories && v.categories.includes(activeCategory)
+			)
+		}
+
+		return filteredVillas
+	}, [villas, query, activeCategory])
 
 	const perPage = 15
 	let sorted = filtered.slice()
@@ -66,7 +84,11 @@ export default function Home({ showFilters = false, query, setQuery, guests, set
 				setGuests={setGuests}
 			/>
 
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+
+			<Categories selected={activeCategory} onSelect={setActiveCategory} />
+
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 				<section>
 					<div className="flex items-center justify-between mb-8">
 						<div className="flex items-center gap-6">

@@ -8,6 +8,12 @@
     "guests": 8,
     "rating": 4.98,
     "available": "Feb 12 - 17",
+    "categories": [
+      "Diani",
+      "Beachfront",
+      "Luxe",
+      "Trending"
+    ],
     "image": "/images/villas/villa-1/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -92,6 +98,12 @@
     "guests": 2,
     "rating": 4.92,
     "available": "Mar 2 - 6",
+    "categories": [
+      "Watamu",
+      "Oceanview",
+      "Couple Friendly",
+      "Design"
+    ],
     "image": "/images/villas/villa-2/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -176,6 +188,12 @@
     "guests": 4,
     "rating": 4.85,
     "available": "Apr 1 - 5",
+    "categories": [
+      "Nyali",
+      "Urban",
+      "Luxe",
+      "Pool"
+    ],
     "image": "/images/villas/villa-3/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -260,6 +278,12 @@
     "guests": 6,
     "rating": 4.95,
     "available": "May 10 - 15",
+    "categories": [
+      "Malindi",
+      "Swahili",
+      "Beachfront",
+      "Mansion"
+    ],
     "image": "/images/villas/villa-4/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -344,6 +368,12 @@
     "guests": 3,
     "rating": 4.75,
     "available": "Jun 5 - 9",
+    "categories": [
+      "Shimoni",
+      "Eco",
+      "Nature",
+      "Budget"
+    ],
     "image": "/images/villas/villa-5/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -428,6 +458,12 @@
     "guests": 10,
     "rating": 5,
     "available": "Jul 1 - 7",
+    "categories": [
+      "Kilifi",
+      "Creek",
+      "Large Groups",
+      "Luxe"
+    ],
     "image": "/images/villas/villa-6/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -512,6 +548,12 @@
     "guests": 6,
     "rating": 4.88,
     "available": "Aug 10 - 15",
+    "categories": [
+      "Vipingo",
+      "Golf",
+      "Gated",
+      "Family"
+    ],
     "image": "/images/villas/villa-7/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -596,6 +638,12 @@
     "guests": 4,
     "rating": 4.9,
     "available": "Sep 20 - 25",
+    "categories": [
+      "Tiwi",
+      "Beachfront",
+      "Cottage",
+      "Secluded"
+    ],
     "image": "/images/villas/villa-8/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -680,6 +728,12 @@
     "guests": 6,
     "rating": 4.86,
     "available": "Oct 3 - 8",
+    "categories": [
+      "Diani",
+      "Family",
+      "Pool",
+      "Garden"
+    ],
     "image": "/images/villas/villa-9/exterior-1.jpg",
     "gallery": {
       "Exterior": [
@@ -764,6 +818,11 @@
     "guests": 6,
     "rating": 4.9,
     "available": "Nov 1 - 6",
+    "categories": [
+      "Ukunda",
+      "Budget",
+      "Near Beach"
+    ],
     "image": "/images/villas/villa-10/exterior-1.jpg",
     "gallery": {
       "Exterior": [

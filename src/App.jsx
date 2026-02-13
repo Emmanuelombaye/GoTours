@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import Nav from './components/Nav'
+import MobileBottomNav from './components/MobileBottomNav'
 import Home from './pages/Home'
 import Listings from './pages/Listings'
 import VillaDetail from './pages/VillaDetail'
@@ -15,7 +16,7 @@ export default function App() {
   return (
     <div>
       <Nav query={query} setQuery={setQuery} guests={guests} setGuests={setGuests} />
-      <main id="main-content">
+      <main id="main-content" className="pb-20 md:pb-0">
         <Routes>
           <Route path="/" element={<Home query={query} setQuery={setQuery} guests={guests} setGuests={setGuests} />} />
           <Route path="/listings" element={<Listings query={query} setQuery={setQuery} guests={guests} setGuests={setGuests} />} />
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="*" element={<div className="p-8">Page not found. Go <Link to="/">home</Link>.</div>} />
         </Routes>
       </main>
+      <MobileBottomNav />
     </div>
   )
 }
