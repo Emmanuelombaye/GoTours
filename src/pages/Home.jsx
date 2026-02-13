@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Hero from '../components/Hero'
 import Categories from '../components/Categories'
+import ListingSection from '../components/ListingSection'
 import Filters from '../components/Filters'
 import VillaCard from '../components/VillaCard'
 import Modal from '../components/Modal'
@@ -110,31 +111,62 @@ export default function Home({ showFilters = false, query, setQuery, guests, set
 						Loading premium listings…
 					</div>}
 
-					<div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-						{showFilters ? (
-							<div className="hidden md:block md:col-span-3">
-								<Filters filters={filters} onChange={setFilters} />
-							</div>
-						) : null}
-
-						<div className={showFilters ? 'md:col-span-9' : 'md:col-span-12'}>
-							<motion.ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 grid-dense" variants={container} initial="hidden" animate="visible">
-								<AnimatePresence>
-									{visible.map((v, i) => (
-										<VillaCard key={v.id} index={i} villa={v} onOpen={(vv) => setSelected(vv)} />
-									))}
-								</AnimatePresence>
-							</motion.ul>
+					{/* Discovery Sections Mode (Default when no search/filter) */}
+					{!query && activeCategory === 'All' && !showFilters ? (
+						<div className="space-y-8 -mt-4">
+							<ListingSection
+								title="Popular homes in Diani"
+								villas={villas.filter(v => v.categories?.includes('Diani') || v.location.includes('Diani')).slice(0, 10)}
+							/>
+							<ListingSection
+								title="Stay in Kilifi County"
+								villas={villas.filter(v => v.categories?.includes('Kilifi') || v.location.includes('Kilifi')).slice(0, 10)}
+							/>
+							<ListingSection
+								title="Available in Mombasa this weekend"
+								villas={villas.filter(v => v.categories?.includes('Nyali') || v.location.includes('Mombasa')).slice(0, 10)}
+							/>
+							<ListingSection
+								title="Beachfront Luxury"
+								villas={villas.filter(v => v.categories?.includes('Beachfront')).slice(0, 10)}
+							/>
+							<ListingSection
+								title="Guest Favorites"
+								villas={villas.filter(v => v.rating >= 4.9).slice(0, 10)}
+							/>
 						</div>
-					</div>
-					<div className="mt-12 text-center">
-						{visible.length < filtered.length ? (
-							<button onClick={() => setPage(p => p + 1)} className="px-8 py-3 bg-white hover:bg-gray-50 text-gray-900 rounded-xl border border-gray-200 font-bold transition-all shadow-sm hover:shadow-md">
-								Load more experiences
-							</button>
-						) : null}
-						<div ref={sentinelRef} aria-hidden style={{ height: 1 }} />
-					</div>
+					) : (
+						/* Filtered Grid Mode */
+						<div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+							{showFilters ? (
+								<div className="hidden md:block md:col-span-3">
+									<Filters filters={filters} onChange={setFilters} />
+								</div>
+							) : null}
+
+							<div className={showFilters ? 'md:col-span-9' : 'md:col-span-12'}>
+								<motion.ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 grid-dense" variants={container} initial="hidden" animate="visible">
+									<AnimatePresence>
+										{visible.map((v, i) => (
+											<VillaCard key={v.id} index={i} villa={v} onOpen={(vv) => setSelected(vv)} />
+										))}
+									</AnimatePresence>
+								</motion.ul>
+							</div>
+						</div>
+					)}
+
+					{/* Load More only in grid mode */}
+					{(query || activeCategory !== 'All' || showFilters) && (
+						<div className="mt-12 text-center">
+							{visible.length < filtered.length ? (
+								<button onClick={() => setPage(p => p + 1)} className="px-8 py-3 bg-white hover:bg-gray-50 text-gray-900 rounded-xl border border-gray-200 font-bold transition-all shadow-sm hover:shadow-md">
+									Load more experiences
+								</button>
+							) : null}
+							<div ref={sentinelRef} aria-hidden style={{ height: 1 }} />
+						</div>
+					)}
 				</section>
 			</div>
 
