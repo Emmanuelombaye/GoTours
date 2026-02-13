@@ -29,7 +29,7 @@ export default function VillaCard({ villa, onOpen, index = 0 }) {
     <motion.li className="group cursor-pointer" variants={item(index)} initial="hidden" animate="visible" custom={index} role="article" aria-label={villa.title}>
       <div className="w-full text-left">
         <Link to={`/villa/${villa.id}`} className="block">
-          <div className="relative aspect-[4/5] w-full rounded-xl overflow-hidden bg-gray-200">
+          <div className="relative aspect-[20/19] w-full rounded-2xl overflow-hidden bg-gray-200">
             <LazyImage src={villa.image} alt={villa.title} className="w-full h-full object-cover card-img" />
             <div className="overlay" aria-hidden />
 
@@ -47,30 +47,26 @@ export default function VillaCard({ villa, onOpen, index = 0 }) {
               </button>
             </div>
           </div>
-          <div className="p-3">
-            <div className="flex items-start justify-between mt-1">
-              <div className="w-full">
-                <div className="flex justify-between items-start">
-                  <h3 className="font-bold text-gray-900 truncate pr-4">{villa.title}</h3>
-                  <div className="flex items-center gap-1 text-sm">
-                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" className="block h-3 w-3 fill-current"><path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.54 1.736l7.293 6.652-1.98 9.674a1 1 0 0 0 1.465 1.063L16 26.131l8.652 4.728a1 1 0 0 0 1.465-1.063l-1.98-9.674 7.293-6.652a1 1 0 0 0-.54-1.736l-9.86-1.27-4.124-8.885a1 1 0 0 0-1.798 0z"></path></svg>
-                    <span>{villa.rating ?? '4.9'}</span>
-                  </div>
-                </div>
-                <div className="text-[15px] text-gray-500">{villa.location.includes("County") ? villa.location : `${villa.location} region`}</div>
-                <div className="text-[15px] text-gray-500">{villa.available || 'Feb 10 - 15'}</div>
-                <div className="mt-1.5 flex items-baseline gap-1">
-                  <span className="font-bold text-gray-900">Ksh {Number(villa.price).toLocaleString()}</span>
-                  <span className="text-gray-900">night</span>
-                </div>
+          <div className="mt-3">
+            <div className="flex items-start justify-between gap-1">
+              <div className="flex-1 min-w-0">
+                <h3 className="font-medium text-[15px] text-gray-900 truncate leading-tight">{villa.location}</h3>
+              </div>
+              <div className="flex items-center gap-1 flex-shrink-0">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" className="block h-3 w-3 fill-current">
+                  <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.54 1.736l7.293 6.652-1.98 9.674a1 1 0 0 0 1.465 1.063L16 26.131l8.652 4.728a1 1 0 0 0 1.465-1.063l-1.98-9.674 7.293-6.652a1 1 0 0 0-.54-1.736l-9.86-1.27-4.124-8.885a1 1 0 0 0-1.798 0z"></path>
+                </svg>
+                <span className="text-[15px] text-gray-900">{villa.rating ?? '4.9'}</span>
               </div>
             </div>
-
+            <div className="text-[15px] text-gray-600 leading-tight">{villa.title}</div>
+            <div className="text-[15px] text-gray-600 leading-tight">{villa.available || 'Feb 10 - 15'}</div>
+            <div className="mt-1">
+              <span className="font-semibold text-[15px] text-gray-900">Ksh {Number(villa.price).toLocaleString()}</span>
+              <span className="text-[15px] text-gray-900"> night</span>
+            </div>
           </div>
         </Link>
-        <div className="p-3 pt-0 flex justify-end">
-          <button type="button" onClick={() => onOpen?.(villa)} className="text-xs px-2 py-1 bg-white border rounded shadow-sm">Quick view</button>
-        </div>
 
         <div className="review-overlay" aria-hidden>
           <div className="text-sm text-gray-700">{reviewSnippet}</div>
