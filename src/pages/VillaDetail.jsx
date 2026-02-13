@@ -54,12 +54,18 @@ export default function VillaDetail() {
           </div>
         </div>
 
-        {/* Gallery Grid */}
+      </div>
+
+      {/* Gallery Grid - breaks out of container */}
+      <div className="-mt-6">
         <Gallery
           images={[villa.image]}
           gallery={villa.gallery}
           onOpenPhotos={() => setIsPhotoModalOpen(true)}
         />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Content Layout */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-12 gap-16 relative">
