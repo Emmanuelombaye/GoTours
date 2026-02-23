@@ -7,7 +7,15 @@
     "bedrooms": 4,
     "price": 25000,
     "amenities": ["pool","chef","beachfront"],
-    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1600&auto=format&fit=crop"
+    "image": "/images/villas/villa-1/exterior-1.jpg",
+    "gallery": {
+      "Exterior": ["/images/villas/villa-1/exterior-1.jpg", "/images/villas/villa-1/exterior-2.png"],
+      "Living Room": ["/images/villas/villa-1/living-room-1.png", "/images/villas/villa-1/living-room-2.png"],
+      "Bedrooms": ["/images/villas/villa-1/bedroom-1.png"],
+      "Kitchen": ["/images/villas/villa-1/kitchen-1.png"],
+      "Bathroom": ["/images/villas/villa-1/bathroom-1.png"],
+      "Pool": ["/images/villas/villa-1/pool-1.png"]
+    }
   },
   {
     "id": 2,
@@ -17,7 +25,15 @@
     "bedrooms": 1,
     "price": 18500,
     "amenities": ["wifi","chef"],
-    "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=1600&auto=format&fit=crop"
+    "image": "/images/villas/villa-2/exterior-2.jpg",
+    "gallery": {
+      "Exterior": ["/images/villas/villa-2/exterior-2.jpg", "/images/villas/villa-2/exterior-2.png"],
+      "Living Room": ["/images/villas/villa-2/living-room-1.png", "/images/villas/villa-2/living-room-2.png"],
+      "Bedrooms": ["/images/villas/villa-2/bedroom-1.png"],
+      "Kitchen": ["/images/villas/villa-2/kitchen-1.png"],
+      "Bathroom": ["/images/villas/villa-2/bathroom-1.png", "/images/villas/villa-2/bathroom-2.jpg"],
+      "Pool": ["/images/villas/villa-2/pool-1.png"]
+    }
   },
   {
     "id": 3,
@@ -27,7 +43,15 @@
     "bedrooms": 2,
     "price": 12000,
     "amenities": ["wifi"],
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1600&auto=format&fit=crop"
+    "image": "/images/villas/villa-3/exterior-3.jpg",
+    "gallery": {
+      "Exterior": ["/images/villas/villa-3/exterior-3.jpg", "/images/villas/villa-3/exterior-4.jpg", "/images/villas/villa-3/exterior-5.jpg"],
+      "Living Room": ["/images/villas/villa-3/living-room-1.png", "/images/villas/villa-3/living-room-2.png"],
+      "Bedrooms": ["/images/villas/villa-3/bedroom-2.jpg", "/images/villas/villa-3/bedroom-3.jpg"],
+      "Kitchen": ["/images/villas/villa-3/kitchen-1.jpg"],
+      "Bathroom": ["/images/villas/villa-3/bathroom-3.jpg"],
+      "Pool": ["/images/villas/villa-3/pool-1.png"]
+    }
   },
   {
     "id": 4,
@@ -37,6 +61,9 @@
     "bedrooms": 3,
     "price": 35000,
     "amenities": ["pool","beachfront"],
-    "image": "https://images.unsplash.com/photo-1519046904884-53103b34b271?q=80&w=1600&auto=format&fit=crop"
+    "image": "/images/villas/villa-4/bathroom-1.png",
+    "gallery": {
+      "Bathroom": ["/images/villas/villa-4/bathroom-1.png"]
+    }
   }
 ]
