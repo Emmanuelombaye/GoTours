@@ -62,21 +62,23 @@
     "gallery": {
       "Exterior": [
         "/images/villas/villa-1/exterior-1.jpg",
-        "/images/villas/villa-1/exterior-2.jpg",
-        "/images/villas/villa-1/exterior-3.jpg"
+        "/images/villas/villa-1/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-1/living-room-1.png",
+        "/images/villas/villa-1/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-1/bedroom-1.jpg",
-        "/images/villas/villa-1/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-1/bathroom-1.jpg"
+        "/images/villas/villa-1/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-1/kitchen-1.jpg"
+        "/images/villas/villa-1/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-1/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-1/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-1/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -148,25 +150,28 @@
       "Couple Friendly",
       "Design"
     ],
-    "image": "/images/villas/villa-2/exterior-1.jpg",
+    "image": "/images/villas/villa-2/exterior-2.jpg",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-2/exterior-1.jpg",
         "/images/villas/villa-2/exterior-2.jpg",
-        "/images/villas/villa-2/exterior-3.jpg"
+        "/images/villas/villa-2/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-2/living-room-1.png",
+        "/images/villas/villa-2/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-2/bedroom-1.jpg",
-        "/images/villas/villa-2/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-2/bathroom-1.jpg"
+        "/images/villas/villa-2/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-2/kitchen-1.jpg"
+        "/images/villas/villa-2/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-2/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-2/bathroom-1.png",
+        "/images/villas/villa-2/bathroom-2.jpg"
+      ],
+      "Pool": [
+        "/images/villas/villa-2/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -238,25 +243,29 @@
       "Luxe",
       "Pool"
     ],
-    "image": "/images/villas/villa-3/exterior-1.jpg",
+    "image": "/images/villas/villa-3/exterior-3.jpg",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-3/exterior-1.jpg",
-        "/images/villas/villa-3/exterior-2.jpg",
-        "/images/villas/villa-3/exterior-3.jpg"
+        "/images/villas/villa-3/exterior-3.jpg",
+        "/images/villas/villa-3/exterior-4.jpg",
+        "/images/villas/villa-3/exterior-5.jpg"
+      ],
+      "Living Room": [
+        "/images/villas/villa-3/living-room-1.png",
+        "/images/villas/villa-3/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-3/bedroom-1.jpg",
-        "/images/villas/villa-3/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-3/bathroom-1.jpg"
+        "/images/villas/villa-3/bedroom-2.jpg",
+        "/images/villas/villa-3/bedroom-3.jpg"
       ],
       "Kitchen": [
         "/images/villas/villa-3/kitchen-1.jpg"
       ],
-      "Power System": [
-        "/images/villas/villa-3/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-3/bathroom-3.jpg"
+      ],
+      "Pool": [
+        "/images/villas/villa-3/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -328,25 +337,27 @@
       "Beachfront",
       "Mansion"
     ],
-    "image": "/images/villas/villa-4/exterior-1.jpg",
+    "image": "/images/villas/villa-4/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-4/exterior-1.jpg",
-        "/images/villas/villa-4/exterior-2.jpg",
-        "/images/villas/villa-4/exterior-3.jpg"
+        "/images/villas/villa-4/exterior-1.png",
+        "/images/villas/villa-4/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-4/living-room-1.png",
+        "/images/villas/villa-4/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-4/bedroom-1.jpg",
-        "/images/villas/villa-4/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-4/bathroom-1.jpg"
+        "/images/villas/villa-4/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-4/kitchen-1.jpg"
+        "/images/villas/villa-4/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-4/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-4/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-4/pool-1.png"
       ]
     },
     "fullAmenities": [
