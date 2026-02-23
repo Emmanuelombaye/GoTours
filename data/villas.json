@@ -1,69 +1,411 @@
-[
-  {
-    "id": 1,
-    "title": "Diani Beach Villa",
-    "location": "Diani, Ukunda",
-    "guests": 4,
-    "bedrooms": 4,
-    "price": 25000,
-    "amenities": ["pool","chef","beachfront"],
-    "image": "/images/villas/villa-1/exterior-1.jpg",
-    "gallery": {
-      "Exterior": ["/images/villas/villa-1/exterior-1.jpg", "/images/villas/villa-1/exterior-2.png"],
-      "Living Room": ["/images/villas/villa-1/living-room-1.png", "/images/villas/villa-1/living-room-2.png"],
-      "Bedrooms": ["/images/villas/villa-1/bedroom-1.png"],
-      "Kitchen": ["/images/villas/villa-1/kitchen-1.png"],
-      "Bathroom": ["/images/villas/villa-1/bathroom-1.png"],
-      "Pool": ["/images/villas/villa-1/pool-1.png"]
+﻿[
+    {
+        "id":  "villa-1",
+        "images":  [
+                       "/images/villas/villa-1/bathroom-1-1280.webp",
+                       "/images/villas/villa-1/bedroom-1-1280.webp",
+                       "/images/villas/villa-1/exterior-1-1280.webp",
+                       "/images/villas/villa-1/exterior-2-1280.webp",
+                       "/images/villas/villa-1/kitchen-1-1280.webp",
+                       "/images/villas/villa-1/living-room-1-1280.webp",
+                       "/images/villas/villa-1/living-room-2-1280.webp",
+                       "/images/villas/villa-1/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-10",
+        "images":  [
+                       "/images/villas/villa-10/bathroom-1-1280.webp",
+                       "/images/villas/villa-10/bedroom-1-1280.webp",
+                       "/images/villas/villa-10/exterior-1-1280.webp",
+                       "/images/villas/villa-10/exterior-2-1280.webp",
+                       "/images/villas/villa-10/kitchen-1-1280.webp",
+                       "/images/villas/villa-10/living-room-1-1280.webp",
+                       "/images/villas/villa-10/living-room-2-1280.webp",
+                       "/images/villas/villa-10/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-11",
+        "images":  [
+                       "/images/villas/villa-11/bathroom-1-1280.webp",
+                       "/images/villas/villa-11/bedroom-1-1280.webp",
+                       "/images/villas/villa-11/exterior-1-1280.webp",
+                       "/images/villas/villa-11/exterior-2-1280.webp",
+                       "/images/villas/villa-11/kitchen-1-1280.webp",
+                       "/images/villas/villa-11/living-room-1-1280.webp",
+                       "/images/villas/villa-11/living-room-2-1280.webp",
+                       "/images/villas/villa-11/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-12",
+        "images":  [
+                       "/images/villas/villa-12/bathroom-1-1280.webp",
+                       "/images/villas/villa-12/bedroom-1-1280.webp",
+                       "/images/villas/villa-12/exterior-1-1280.webp",
+                       "/images/villas/villa-12/exterior-2-1280.webp",
+                       "/images/villas/villa-12/kitchen-1-1280.webp",
+                       "/images/villas/villa-12/living-room-1-1280.webp",
+                       "/images/villas/villa-12/living-room-2-1280.webp",
+                       "/images/villas/villa-12/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-13",
+        "images":  [
+                       "/images/villas/villa-13/bathroom-1-1280.webp",
+                       "/images/villas/villa-13/bedroom-1-1280.webp",
+                       "/images/villas/villa-13/exterior-1-1280.webp",
+                       "/images/villas/villa-13/exterior-2-1280.webp",
+                       "/images/villas/villa-13/kitchen-1-1280.webp",
+                       "/images/villas/villa-13/living-room-1-1280.webp",
+                       "/images/villas/villa-13/living-room-2-1280.webp",
+                       "/images/villas/villa-13/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-14",
+        "images":  [
+                       "/images/villas/villa-14/bathroom-1-1280.webp",
+                       "/images/villas/villa-14/bedroom-1-1280.webp",
+                       "/images/villas/villa-14/exterior-1-1280.webp",
+                       "/images/villas/villa-14/exterior-2-1280.webp",
+                       "/images/villas/villa-14/kitchen-1-1280.webp",
+                       "/images/villas/villa-14/living-room-1-1280.webp",
+                       "/images/villas/villa-14/living-room-2-1280.webp",
+                       "/images/villas/villa-14/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-15",
+        "images":  [
+                       "/images/villas/villa-15/bathroom-1-1280.webp",
+                       "/images/villas/villa-15/bedroom-1-1280.webp",
+                       "/images/villas/villa-15/exterior-1-1280.webp",
+                       "/images/villas/villa-15/exterior-2-1280.webp",
+                       "/images/villas/villa-15/kitchen-1-1280.webp",
+                       "/images/villas/villa-15/living-room-1-1280.webp",
+                       "/images/villas/villa-15/living-room-2-1280.webp",
+                       "/images/villas/villa-15/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-16",
+        "images":  [
+                       "/images/villas/villa-16/bathroom-1-1280.webp",
+                       "/images/villas/villa-16/bedroom-1-1280.webp",
+                       "/images/villas/villa-16/exterior-1-1280.webp",
+                       "/images/villas/villa-16/exterior-2-1280.webp",
+                       "/images/villas/villa-16/kitchen-1-1280.webp",
+                       "/images/villas/villa-16/living-room-1-1280.webp",
+                       "/images/villas/villa-16/living-room-2-1280.webp",
+                       "/images/villas/villa-16/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-17",
+        "images":  [
+                       "/images/villas/villa-17/bathroom-1-1280.webp",
+                       "/images/villas/villa-17/bedroom-1-1280.webp",
+                       "/images/villas/villa-17/exterior-1-1280.webp",
+                       "/images/villas/villa-17/exterior-2-1280.webp",
+                       "/images/villas/villa-17/kitchen-1-1280.webp",
+                       "/images/villas/villa-17/living-room-1-1280.webp",
+                       "/images/villas/villa-17/living-room-2-1280.webp",
+                       "/images/villas/villa-17/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-18",
+        "images":  [
+                       "/images/villas/villa-18/bathroom-1-1280.webp",
+                       "/images/villas/villa-18/bedroom-1-1280.webp",
+                       "/images/villas/villa-18/exterior-1-1280.webp",
+                       "/images/villas/villa-18/exterior-2-1280.webp",
+                       "/images/villas/villa-18/kitchen-1-1280.webp",
+                       "/images/villas/villa-18/living-room-1-1280.webp",
+                       "/images/villas/villa-18/living-room-2-1280.webp",
+                       "/images/villas/villa-18/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-19",
+        "images":  [
+                       "/images/villas/villa-19/bathroom-1-1280.webp",
+                       "/images/villas/villa-19/bedroom-1-1280.webp",
+                       "/images/villas/villa-19/exterior-1-1280.webp",
+                       "/images/villas/villa-19/exterior-2-1280.webp",
+                       "/images/villas/villa-19/kitchen-1-1280.webp",
+                       "/images/villas/villa-19/living-room-1-1280.webp",
+                       "/images/villas/villa-19/living-room-2-1280.webp",
+                       "/images/villas/villa-19/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-2",
+        "images":  [
+                       "/images/villas/villa-2/bathroom-1-1280.webp",
+                       "/images/villas/villa-2/bathroom-2-1280.webp",
+                       "/images/villas/villa-2/bedroom-1-1280.webp",
+                       "/images/villas/villa-2/exterior-1-1280.webp",
+                       "/images/villas/villa-2/exterior-2-1280.webp",
+                       "/images/villas/villa-2/kitchen-1-1280.webp",
+                       "/images/villas/villa-2/living-room-1-1280.webp",
+                       "/images/villas/villa-2/living-room-2-1280.webp",
+                       "/images/villas/villa-2/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-20",
+        "images":  [
+                       "/images/villas/villa-20/bathroom-1-1280.webp",
+                       "/images/villas/villa-20/bedroom-1-1280.webp",
+                       "/images/villas/villa-20/exterior-1-1280.webp",
+                       "/images/villas/villa-20/exterior-2-1280.webp",
+                       "/images/villas/villa-20/kitchen-1-1280.webp",
+                       "/images/villas/villa-20/living-room-1-1280.webp",
+                       "/images/villas/villa-20/living-room-2-1280.webp",
+                       "/images/villas/villa-20/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-21",
+        "images":  [
+                       "/images/villas/villa-21/bathroom-1-1280.webp",
+                       "/images/villas/villa-21/bedroom-1-1280.webp",
+                       "/images/villas/villa-21/exterior-1-1280.webp",
+                       "/images/villas/villa-21/exterior-2-1280.webp",
+                       "/images/villas/villa-21/kitchen-1-1280.webp",
+                       "/images/villas/villa-21/living-room-1-1280.webp",
+                       "/images/villas/villa-21/living-room-2-1280.webp",
+                       "/images/villas/villa-21/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-22",
+        "images":  [
+                       "/images/villas/villa-22/bathroom-1-1280.webp",
+                       "/images/villas/villa-22/bedroom-1-1280.webp",
+                       "/images/villas/villa-22/exterior-1-1280.webp",
+                       "/images/villas/villa-22/exterior-2-1280.webp",
+                       "/images/villas/villa-22/kitchen-1-1280.webp",
+                       "/images/villas/villa-22/living-room-1-1280.webp",
+                       "/images/villas/villa-22/living-room-2-1280.webp",
+                       "/images/villas/villa-22/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-23",
+        "images":  [
+                       "/images/villas/villa-23/bathroom-1-1280.webp",
+                       "/images/villas/villa-23/bedroom-1-1280.webp",
+                       "/images/villas/villa-23/exterior-1-1280.webp",
+                       "/images/villas/villa-23/exterior-2-1280.webp",
+                       "/images/villas/villa-23/kitchen-1-1280.webp",
+                       "/images/villas/villa-23/living-room-1-1280.webp",
+                       "/images/villas/villa-23/living-room-2-1280.webp",
+                       "/images/villas/villa-23/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-24",
+        "images":  [
+                       "/images/villas/villa-24/bathroom-1-1280.webp",
+                       "/images/villas/villa-24/bedroom-1-1280.webp",
+                       "/images/villas/villa-24/exterior-1-1280.webp",
+                       "/images/villas/villa-24/exterior-2-1280.webp",
+                       "/images/villas/villa-24/kitchen-1-1280.webp",
+                       "/images/villas/villa-24/living-room-1-1280.webp",
+                       "/images/villas/villa-24/living-room-2-1280.webp",
+                       "/images/villas/villa-24/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-25",
+        "images":  [
+                       "/images/villas/villa-25/bathroom-1-1280.webp",
+                       "/images/villas/villa-25/bedroom-1-1280.webp",
+                       "/images/villas/villa-25/exterior-1-1280.webp",
+                       "/images/villas/villa-25/exterior-2-1280.webp",
+                       "/images/villas/villa-25/kitchen-1-1280.webp",
+                       "/images/villas/villa-25/living-room-1-1280.webp",
+                       "/images/villas/villa-25/living-room-2-1280.webp",
+                       "/images/villas/villa-25/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-26",
+        "images":  [
+                       "/images/villas/villa-26/bathroom-1-1280.webp",
+                       "/images/villas/villa-26/bedroom-1-1280.webp",
+                       "/images/villas/villa-26/exterior-1-1280.webp",
+                       "/images/villas/villa-26/exterior-2-1280.webp",
+                       "/images/villas/villa-26/kitchen-1-1280.webp",
+                       "/images/villas/villa-26/living-room-1-1280.webp",
+                       "/images/villas/villa-26/living-room-2-1280.webp",
+                       "/images/villas/villa-26/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-27",
+        "images":  [
+                       "/images/villas/villa-27/bathroom-1-1280.webp",
+                       "/images/villas/villa-27/bedroom-1-1280.webp",
+                       "/images/villas/villa-27/exterior-1-1280.webp",
+                       "/images/villas/villa-27/exterior-2-1280.webp",
+                       "/images/villas/villa-27/kitchen-1-1280.webp",
+                       "/images/villas/villa-27/living-room-1-1280.webp",
+                       "/images/villas/villa-27/living-room-2-1280.webp",
+                       "/images/villas/villa-27/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-28",
+        "images":  [
+                       "/images/villas/villa-28/bathroom-1-1280.webp",
+                       "/images/villas/villa-28/bedroom-1-1280.webp",
+                       "/images/villas/villa-28/exterior-1-1280.webp",
+                       "/images/villas/villa-28/exterior-2-1280.webp",
+                       "/images/villas/villa-28/kitchen-1-1280.webp",
+                       "/images/villas/villa-28/living-room-1-1280.webp",
+                       "/images/villas/villa-28/living-room-2-1280.webp",
+                       "/images/villas/villa-28/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-29",
+        "images":  [
+                       "/images/villas/villa-29/bathroom-1-1280.webp",
+                       "/images/villas/villa-29/bedroom-1-1280.webp",
+                       "/images/villas/villa-29/exterior-1-1280.webp",
+                       "/images/villas/villa-29/exterior-2-1280.webp",
+                       "/images/villas/villa-29/kitchen-1-1280.webp",
+                       "/images/villas/villa-29/living-room-1-1280.webp",
+                       "/images/villas/villa-29/living-room-2-1280.webp",
+                       "/images/villas/villa-29/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-3",
+        "images":  [
+                       "/images/villas/villa-3/bathroom-1-1280.webp",
+                       "/images/villas/villa-3/bathroom-3-1280.webp",
+                       "/images/villas/villa-3/bedroom-1-1280.webp",
+                       "/images/villas/villa-3/bedroom-2-1280.webp",
+                       "/images/villas/villa-3/bedroom-3-1280.webp",
+                       "/images/villas/villa-3/exterior-1-1280.webp",
+                       "/images/villas/villa-3/exterior-2-1280.webp",
+                       "/images/villas/villa-3/exterior-3-1280.webp",
+                       "/images/villas/villa-3/exterior-4-1280.webp",
+                       "/images/villas/villa-3/exterior-5-1280.webp",
+                       "/images/villas/villa-3/kitchen-1-1280.webp",
+                       "/images/villas/villa-3/living-room-1-1280.webp",
+                       "/images/villas/villa-3/living-room-2-1280.webp",
+                       "/images/villas/villa-3/pool-1-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133423-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133449-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133619-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133649-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133714-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133730-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133753-1280.webp",
+                       "/images/villas/villa-3/Screenshot 2026-02-12 133851-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-30",
+        "images":  [
+                       "/images/villas/villa-30/bathroom-1-1280.webp",
+                       "/images/villas/villa-30/bedroom-1-1280.webp",
+                       "/images/villas/villa-30/exterior-1-1280.webp",
+                       "/images/villas/villa-30/exterior-2-1280.webp",
+                       "/images/villas/villa-30/kinondo-bathroom-1-1280.webp",
+                       "/images/villas/villa-30/kinondo-bedroom-1-1280.webp",
+                       "/images/villas/villa-30/kinondo-bedroom-2-1280.webp",
+                       "/images/villas/villa-30/kinondo-cool-breeze-drone-1280.webp",
+                       "/images/villas/villa-30/kinondo-exterior-1-1280.webp",
+                       "/images/villas/villa-30/kinondo-kitchen-1-1280.webp",
+                       "/images/villas/villa-30/kitchen-1-1280.webp",
+                       "/images/villas/villa-30/living-room-1-1280.webp",
+                       "/images/villas/villa-30/living-room-2-1280.webp",
+                       "/images/villas/villa-30/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-4",
+        "images":  [
+                       "/images/villas/villa-4/bathroom-1-1280.webp",
+                       "/images/villas/villa-4/bedroom-1-1280.webp",
+                       "/images/villas/villa-4/exterior-1-1280.webp",
+                       "/images/villas/villa-4/exterior-2-1280.webp",
+                       "/images/villas/villa-4/kitchen-1-1280.webp",
+                       "/images/villas/villa-4/living-room-1-1280.webp",
+                       "/images/villas/villa-4/living-room-2-1280.webp",
+                       "/images/villas/villa-4/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-5",
+        "images":  [
+                       "/images/villas/villa-5/bathroom-1-1280.webp",
+                       "/images/villas/villa-5/bedroom-1-1280.webp",
+                       "/images/villas/villa-5/exterior-1-1280.webp",
+                       "/images/villas/villa-5/kitchen-1-1280.webp",
+                       "/images/villas/villa-5/living-room-1-1280.webp",
+                       "/images/villas/villa-5/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-6",
+        "images":  [
+                       "/images/villas/villa-6/bathroom-1-1280.webp",
+                       "/images/villas/villa-6/bedroom-1-1280.webp",
+                       "/images/villas/villa-6/exterior-1-1280.webp",
+                       "/images/villas/villa-6/exterior-2-1280.webp",
+                       "/images/villas/villa-6/kitchen-1-1280.webp",
+                       "/images/villas/villa-6/living-room-1-1280.webp",
+                       "/images/villas/villa-6/living-room-2-1280.webp",
+                       "/images/villas/villa-6/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-7",
+        "images":  [
+                       "/images/villas/villa-7/bathroom-1-1280.webp",
+                       "/images/villas/villa-7/bedroom-1-1280.webp",
+                       "/images/villas/villa-7/exterior-1-1280.webp",
+                       "/images/villas/villa-7/exterior-2-1280.webp",
+                       "/images/villas/villa-7/kitchen-1-1280.webp",
+                       "/images/villas/villa-7/living-room-1-1280.webp",
+                       "/images/villas/villa-7/living-room-2-1280.webp",
+                       "/images/villas/villa-7/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-8",
+        "images":  [
+                       "/images/villas/villa-8/bathroom-1-1280.webp",
+                       "/images/villas/villa-8/bedroom-1-1280.webp",
+                       "/images/villas/villa-8/exterior-1-1280.webp",
+                       "/images/villas/villa-8/exterior-2-1280.webp",
+                       "/images/villas/villa-8/kitchen-1-1280.webp",
+                       "/images/villas/villa-8/living-room-1-1280.webp",
+                       "/images/villas/villa-8/living-room-2-1280.webp",
+                       "/images/villas/villa-8/pool-1-1280.webp"
+                   ]
+    },
+    {
+        "id":  "villa-9",
+        "images":  [
+                       "/images/villas/villa-9/bathroom-1-1280.webp",
+                       "/images/villas/villa-9/bedroom-1-1280.webp",
+                       "/images/villas/villa-9/exterior-1-1280.webp",
+                       "/images/villas/villa-9/exterior-2-1280.webp",
+                       "/images/villas/villa-9/kitchen-1-1280.webp",
+                       "/images/villas/villa-9/living-room-1-1280.webp",
+                       "/images/villas/villa-9/living-room-2-1280.webp",
+                       "/images/villas/villa-9/pool-1-1280.webp"
+                   ]
     }
-  },
-  {
-    "id": 2,
-    "title": "Watamu Luxury Suite",
-    "location": "Watamu, Kilifi",
-    "guests": 2,
-    "bedrooms": 1,
-    "price": 18500,
-    "amenities": ["wifi","chef"],
-    "image": "/images/villas/villa-2/exterior-2.jpg",
-    "gallery": {
-      "Exterior": ["/images/villas/villa-2/exterior-2.jpg", "/images/villas/villa-2/exterior-2.png"],
-      "Living Room": ["/images/villas/villa-2/living-room-1.png", "/images/villas/villa-2/living-room-2.png"],
-      "Bedrooms": ["/images/villas/villa-2/bedroom-1.png"],
-      "Kitchen": ["/images/villas/villa-2/kitchen-1.png"],
-      "Bathroom": ["/images/villas/villa-2/bathroom-1.png", "/images/villas/villa-2/bathroom-2.jpg"],
-      "Pool": ["/images/villas/villa-2/pool-1.png"]
-    }
-  },
-  {
-    "id": 3,
-    "title": "Nyali Penthouse",
-    "location": "Nyali, Mombasa",
-    "guests": 3,
-    "bedrooms": 2,
-    "price": 12000,
-    "amenities": ["wifi"],
-    "image": "/images/villas/villa-3/exterior-3.jpg",
-    "gallery": {
-      "Exterior": ["/images/villas/villa-3/exterior-3.jpg", "/images/villas/villa-3/exterior-4.jpg", "/images/villas/villa-3/exterior-5.jpg"],
-      "Living Room": ["/images/villas/villa-3/living-room-1.png", "/images/villas/villa-3/living-room-2.png"],
-      "Bedrooms": ["/images/villas/villa-3/bedroom-2.jpg", "/images/villas/villa-3/bedroom-3.jpg"],
-      "Kitchen": ["/images/villas/villa-3/kitchen-1.jpg"],
-      "Bathroom": ["/images/villas/villa-3/bathroom-3.jpg"],
-      "Pool": ["/images/villas/villa-3/pool-1.png"]
-    }
-  },
-  {
-    "id": 4,
-    "title": "Malindi Swahili Villa",
-    "location": "Malindi, Kilifi",
-    "guests": 6,
-    "bedrooms": 3,
-    "price": 35000,
-    "amenities": ["pool","beachfront"],
-    "image": "/images/villas/villa-4/bathroom-1.png",
-    "gallery": {
-      "Bathroom": ["/images/villas/villa-4/bathroom-1.png"]
-    }
-  }
 ]

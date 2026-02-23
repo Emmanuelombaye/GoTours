@@ -1,7 +1,70 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+const OptimizedImage = ({ src, alt, className, loading = 'lazy', priority = false }) => {
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [error, setError] = useState(false);
+    const [currentSrc, setCurrentSrc] = useState(src);
+
+    // Generate thumbnail URL
+    const thumbnailSrc = src.replace('/villas/', '/villas/thumbnails/').replace(/\.(jpg|png|webp)$/, '_thumb.$1');
+
+    useEffect(() => {
+        // Preload priority images
+        if (priority && src) {
+            const img = new Image();
+            img.onload = () => {
+                setIsLoaded(true);
+                setCurrentSrc(src);
+            };
+            img.onerror = () => setError(true);
+            img.src = src;
+        }
+    }, [src, priority]);
+
+    if (error) {
+        return (
+            <div className={`${className} bg-gray-200 flex items-center justify-center`}>
+                <span className="text-gray-500 text-sm">Image not available</span>
+            </div>
+        );
+    }
+
+    return (
+        <div className="relative">
+            {/* Thumbnail/placeholder */}
+            {!isLoaded && (
+                <img
+                    src={thumbnailSrc}
+                    alt=""
+                    className={`${className} absolute inset-0 blur-sm scale-110`}
+                    style={{ filter: 'blur(20px)' }}
+                />
+            )}
+            
+            {/* Main image */}
+            <img
+                src={priority ? currentSrc : src}
+                alt={alt}
+                className={`${className} transition-all duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                loading={priority ? 'eager' : loading}
+                onLoad={() => setIsLoaded(true)}
+                onError={() => setError(true)}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            
+            {/* Loading skeleton */}
+            {!isLoaded && (
+                <div className={`${className} absolute inset-0 bg-gray-200 animate-pulse`} />
+            )}
+        </div>
+    );
+};
+
 const Gallery = ({ images = [], gallery = {}, onOpenPhotos }) => {
+    const [visibleImages, setVisibleImages] = useState(5);
+    const [loadingTime, setLoadingTime] = useState(null);
+
     // Collect all images from the categorized gallery if available
     const galleryImages = Object.values(gallery).flat();
 
@@ -18,8 +81,42 @@ const Gallery = ({ images = [], gallery = {}, onOpenPhotos }) => {
             'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800'
         ];
 
+    // Track loading performance
+    useEffect(() => {
+        const startTime = performance.now();
+        
+        const imagePromises = [
+            new Promise((resolve) => {
+                const img = new Image();
+                img.onload = resolve;
+                img.onerror = resolve;
+                img.src = mainImage;
+            }),
+            ...subImages.slice(0, 4).map(src => 
+                new Promise((resolve) => {
+                    const img = new Image();
+                    img.onload = resolve;
+                    img.onerror = resolve;
+                    img.src = src;
+                })
+            )
+        ];
+
+        Promise.all(imagePromises).then(() => {
+            const endTime = performance.now();
+            setLoadingTime(Math.round(endTime - startTime));
+        });
+    }, [mainImage, subImages]);
+
     return (
         <div className="w-full px-6 lg:px-20">
+            {/* Performance indicator */}
+            {loadingTime && (
+                <div className="text-xs text-gray-500 mb-2 text-center">
+                    Images loaded in {loadingTime}ms
+                </div>
+            )}
+            
             <div className="relative group max-w-[1440px] mx-auto">
                 <div
                     className="grid grid-cols-1 md:grid-cols-4 gap-2 h-[300px] md:h-[460px] rounded-xl overflow-hidden cursor-pointer"
@@ -27,24 +124,19 @@ const Gallery = ({ images = [], gallery = {}, onOpenPhotos }) => {
                 >
                     {/* Large Main Image */}
                     <div className="md:col-span-2 h-full relative overflow-hidden">
-                        <div className="absolute inset-0 bg-slate-200 animate-pulse" />
-                        <motion.img
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.5 }}
+                        <OptimizedImage
                             src={mainImage}
                             alt="Villa main"
                             className="w-full h-full object-cover relative z-10"
+                            priority={true}
                         />
                     </div>
 
                     {/* Small Images Grid */}
                     <div className="hidden md:grid grid-cols-2 grid-rows-2 col-span-2 gap-2 h-full">
-                        {subImages.map((src, idx) => (
+                        {subImages.slice(0, visibleImages - 1).map((src, idx) => (
                             <div key={idx} className="relative h-full overflow-hidden">
-                                <div className="absolute inset-0 bg-slate-200 animate-pulse" />
-                                <motion.img
-                                    whileHover={{ scale: 1.05 }}
-                                    transition={{ duration: 0.5 }}
+                                <OptimizedImage
                                     src={src}
                                     alt={`Villa view ${idx + 1}`}
                                     className="w-full h-full object-cover relative z-10"
