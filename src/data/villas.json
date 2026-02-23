@@ -429,25 +429,25 @@
       "Nature",
       "Budget"
     ],
-    "image": "/images/villas/villa-5/exterior-1.jpg",
+    "image": "/images/villas/villa-5/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-5/exterior-1.jpg",
-        "/images/villas/villa-5/exterior-2.jpg",
-        "/images/villas/villa-5/exterior-3.jpg"
+        "/images/villas/villa-5/exterior-1.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-5/living-room-1.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-5/bedroom-1.jpg",
-        "/images/villas/villa-5/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-5/bathroom-1.jpg"
+        "/images/villas/villa-5/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-5/kitchen-1.jpg"
+        "/images/villas/villa-5/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-5/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-5/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-5/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -519,25 +519,27 @@
       "Large Groups",
       "Luxe"
     ],
-    "image": "/images/villas/villa-6/exterior-1.jpg",
+    "image": "/images/villas/villa-6/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-6/exterior-1.jpg",
-        "/images/villas/villa-6/exterior-2.jpg",
-        "/images/villas/villa-6/exterior-3.jpg"
+        "/images/villas/villa-6/exterior-1.png",
+        "/images/villas/villa-6/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-6/living-room-1.png",
+        "/images/villas/villa-6/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-6/bedroom-1.jpg",
-        "/images/villas/villa-6/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-6/bathroom-1.jpg"
+        "/images/villas/villa-6/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-6/kitchen-1.jpg"
+        "/images/villas/villa-6/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-6/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-6/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-6/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -609,25 +611,27 @@
       "Gated",
       "Family"
     ],
-    "image": "/images/villas/villa-7/exterior-1.jpg",
+    "image": "/images/villas/villa-7/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-7/exterior-1.jpg",
-        "/images/villas/villa-7/exterior-2.jpg",
-        "/images/villas/villa-7/exterior-3.jpg"
+        "/images/villas/villa-7/exterior-1.png",
+        "/images/villas/villa-7/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-7/living-room-1.png",
+        "/images/villas/villa-7/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-7/bedroom-1.jpg",
-        "/images/villas/villa-7/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-7/bathroom-1.jpg"
+        "/images/villas/villa-7/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-7/kitchen-1.jpg"
+        "/images/villas/villa-7/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-7/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-7/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-7/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -699,25 +703,27 @@
       "Cottage",
       "Secluded"
     ],
-    "image": "/images/villas/villa-8/exterior-1.jpg",
+    "image": "/images/villas/villa-8/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-8/exterior-1.jpg",
-        "/images/villas/villa-8/exterior-2.jpg",
-        "/images/villas/villa-8/exterior-3.jpg"
+        "/images/villas/villa-8/exterior-1.png",
+        "/images/villas/villa-8/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-8/living-room-1.png",
+        "/images/villas/villa-8/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-8/bedroom-1.jpg",
-        "/images/villas/villa-8/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-8/bathroom-1.jpg"
+        "/images/villas/villa-8/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-8/kitchen-1.jpg"
+        "/images/villas/villa-8/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-8/solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-8/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-8/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -789,25 +795,27 @@
       "Pool",
       "Garden"
     ],
-    "image": "/images/villas/villa-9/dianiexterior-1.jpg",
+    "image": "/images/villas/villa-9/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-9/dianiexterior-1.jpg",
-        "/images/villas/villa-9/dianiexterior-2.jpg",
-        "/images/villas/villa-9/dianiexterior-3.jpg"
+        "/images/villas/villa-9/exterior-1.png",
+        "/images/villas/villa-9/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-9/living-room-1.png",
+        "/images/villas/villa-9/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-9/dianibedroom-1.jpg",
-        "/images/villas/villa-9/dianibedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-9/dianibathroom-1.jpg"
+        "/images/villas/villa-9/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-9/dianikitchen-1.jpg"
+        "/images/villas/villa-9/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-9/dianisolar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-9/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-9/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -878,25 +886,27 @@
       "Budget",
       "Near Beach"
     ],
-    "image": "/images/villas/villa-10/oceanviewexterior-1.jpg",
+    "image": "/images/villas/villa-10/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-10/oceanviewexterior-1.jpg",
-        "/images/villas/villa-10/oceanviewexterior-2.jpg",
-        "/images/villas/villa-10/oceanviewexterior-3.jpg"
+        "/images/villas/villa-10/exterior-1.png",
+        "/images/villas/villa-10/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-10/living-room-1.png",
+        "/images/villas/villa-10/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-10/oceanviewbedroom-1.jpg",
-        "/images/villas/villa-10/oceanviewbedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-10/oceanviewbathroom-1.jpg"
+        "/images/villas/villa-10/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-10/oceanviewkitchen-1.jpg"
+        "/images/villas/villa-10/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-10/oceanviewsolar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-10/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-10/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -962,25 +972,27 @@
     "guests": 8,
     "rating": 4.97,
     "available": "Nov 20 - 25",
-    "image": "/images/villas/villa-11/coralsandsexterior-1.jpg",
+    "image": "/images/villas/villa-11/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-11/coralsandsexterior-1.jpg",
-        "/images/villas/villa-11/coralsandsexterior-2.jpg",
-        "/images/villas/villa-11/coralsandsexterior-3.jpg"
+        "/images/villas/villa-11/exterior-1.png",
+        "/images/villas/villa-11/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-11/living-room-1.png",
+        "/images/villas/villa-11/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-11/coralsandsbedroom-1.jpg",
-        "/images/villas/villa-11/coralsandsbedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-11/coralsandsbathroom-1.jpg"
+        "/images/villas/villa-11/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-11/coralsandskitchen-1.jpg"
+        "/images/villas/villa-11/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-11/coralsandssolar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-11/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-11/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1046,25 +1058,27 @@
     "guests": 2,
     "rating": 4.7,
     "available": "Dec 5 - 9",
-    "image": "/images/villas/villa-12/seabreezeexterior-1.jpg",
+    "image": "/images/villas/villa-12/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-12/seabreezeexterior-1.jpg",
-        "/images/villas/villa-12/seabreezeexterior-2.jpg",
-        "/images/villas/villa-12/seabreezeexterior-3.jpg"
+        "/images/villas/villa-12/exterior-1.png",
+        "/images/villas/villa-12/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-12/living-room-1.png",
+        "/images/villas/villa-12/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-12/seabreezebedroom-1.jpg",
-        "/images/villas/villa-12/seabreezebedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-12/seabreezebathroom-1.jpg"
+        "/images/villas/villa-12/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-12/seabreezekitchen-1.jpg"
+        "/images/villas/villa-12/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-12/seabreezesolar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-12/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-12/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1130,25 +1144,27 @@
     "guests": 6,
     "rating": 4.89,
     "available": "Dec 12 - 18",
-    "image": "/images/villas/villa-13/pelicanbayexterior-1.jpg",
+    "image": "/images/villas/villa-13/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-13/pelicanbayexterior-1.jpg",
-        "/images/villas/villa-13/pelicanbayexterior-2.jpg",
-        "/images/villas/villa-13/pelicanbayexterior-3.jpg"
+        "/images/villas/villa-13/exterior-1.png",
+        "/images/villas/villa-13/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-13/living-room-1.png",
+        "/images/villas/villa-13/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-13/pelicanbaybedroom-1.jpg",
-        "/images/villas/villa-13/pelicanbaybedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-13/pelicanbaybathroom-1.jpg"
+        "/images/villas/villa-13/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-13/pelicanbaykitchen-1.jpg"
+        "/images/villas/villa-13/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-13/pelicanbaysolar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-13/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-13/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1214,25 +1230,27 @@
     "guests": 8,
     "rating": 4.93,
     "available": "Jan 7 - 12",
-    "image": "/images/villas/villa-14/azurecliffexterior-1.jpg",
+    "image": "/images/villas/villa-14/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-14/azurecliffexterior-1.jpg",
-        "/images/villas/villa-14/azurecliffexterior-2.jpg",
-        "/images/villas/villa-14/azurecliffexterior-3.jpg"
+        "/images/villas/villa-14/exterior-1.png",
+        "/images/villas/villa-14/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-14/living-room-1.png",
+        "/images/villas/villa-14/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-14/azurecliffbedroom-1.jpg",
-        "/images/villas/villa-14/azurecliffbedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-14/azurecliffbathroom-1.jpg"
+        "/images/villas/villa-14/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-14/azurecliffkitchen-1.jpg"
+        "/images/villas/villa-14/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-14/azurecliffsolar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-14/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-14/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1298,25 +1316,27 @@
     "guests": 4,
     "rating": 4.6,
     "available": "Feb 2 - 6",
-    "image": "/images/villas/villa-15/sokoislandstay-exterior-1.jpg",
+    "image": "/images/villas/villa-15/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-15/sokoislandstay-exterior-1.jpg",
-        "/images/villas/villa-15/sokoislandstay-exterior-2.jpg",
-        "/images/villas/villa-15/sokoislandstay-exterior-3.jpg"
+        "/images/villas/villa-15/exterior-1.png",
+        "/images/villas/villa-15/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-15/living-room-1.png",
+        "/images/villas/villa-15/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-15/sokoislandstay-bedroom-1.jpg",
-        "/images/villas/villa-15/sokoislandstay-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-15/sokoislandstay-bathroom-1.jpg"
+        "/images/villas/villa-15/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-15/sokoislandstay-kitchen-1.jpg"
+        "/images/villas/villa-15/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-15/sokoislandstay-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-15/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-15/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1382,25 +1402,27 @@
     "guests": 8,
     "rating": 4.91,
     "available": "Mar 15 - 20",
-    "image": "/images/villas/villa-16/lagoonviewvilla-exterior-1.jpg",
+    "image": "/images/villas/villa-16/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-16/lagoonviewvilla-exterior-1.jpg",
-        "/images/villas/villa-16/lagoonviewvilla-exterior-2.jpg",
-        "/images/villas/villa-16/lagoonviewvilla-exterior-3.jpg"
+        "/images/villas/villa-16/exterior-1.png",
+        "/images/villas/villa-16/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-16/living-room-1.png",
+        "/images/villas/villa-16/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-16/lagoonviewvilla-bedroom-1.jpg",
-        "/images/villas/villa-16/lagoonviewvilla-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-16/lagoonviewvilla-bathroom-1.jpg"
+        "/images/villas/villa-16/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-16/lagoonviewvilla-kitchen-1.jpg"
+        "/images/villas/villa-16/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-16/lagoonviewvilla-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-16/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-16/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1466,25 +1488,27 @@
     "guests": 4,
     "rating": 4.8,
     "available": "Apr 2 - 7",
-    "image": "/images/villas/villa-17/mnaranihouse-exterior-1.jpg",
+    "image": "/images/villas/villa-17/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-17/mnaranihouse-exterior-1.jpg",
-        "/images/villas/villa-17/mnaranihouse-exterior-2.jpg",
-        "/images/villas/villa-17/mnaranihouse-exterior-3.jpg"
+        "/images/villas/villa-17/exterior-1.png",
+        "/images/villas/villa-17/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-17/living-room-1.png",
+        "/images/villas/villa-17/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-17/mnaranihouse-bedroom-1.jpg",
-        "/images/villas/villa-17/mnaranihouse-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-17/mnaranihouse-bathroom-1.jpg"
+        "/images/villas/villa-17/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-17/mnaranihouse-kitchen-1.jpg"
+        "/images/villas/villa-17/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-17/mnaranihouse-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-17/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-17/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1550,25 +1574,27 @@
     "guests": 6,
     "rating": 4.84,
     "available": "May 5 - 10",
-    "image": "/images/villas/villa-18/sandytoesvilla-exterior-1.jpg",
+    "image": "/images/villas/villa-18/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-18/sandytoesvilla-exterior-1.jpg",
-        "/images/villas/villa-18/sandytoesvilla-exterior-2.jpg",
-        "/images/villas/villa-18/sandytoesvilla-exterior-3.jpg"
+        "/images/villas/villa-18/exterior-1.png",
+        "/images/villas/villa-18/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-18/living-room-1.png",
+        "/images/villas/villa-18/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-18/sandytoesvilla-bedroom-1.jpg",
-        "/images/villas/villa-18/sandytoesvilla-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-18/sandytoesvilla-bathroom-1.jpg"
+        "/images/villas/villa-18/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-18/sandytoesvilla-kitchen-1.jpg"
+        "/images/villas/villa-18/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-18/sandytoesvilla-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-18/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-18/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1634,25 +1660,27 @@
     "guests": 4,
     "rating": 4.72,
     "available": "Jun 10 - 14",
-    "image": "/images/villas/villa-19/coconutgrove-exterior-1.jpg",
+    "image": "/images/villas/villa-19/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-19/coconutgrove-exterior-1.jpg",
-        "/images/villas/villa-19/coconutgrove-exterior-2.jpg",
-        "/images/villas/villa-19/coconutgrove-exterior-3.jpg"
+        "/images/villas/villa-19/exterior-1.png",
+        "/images/villas/villa-19/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-19/living-room-1.png",
+        "/images/villas/villa-19/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-19/coconutgrove-bedroom-1.jpg",
-        "/images/villas/villa-19/coconutgrove-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-19/coconutgrove-bathroom-1.jpg"
+        "/images/villas/villa-19/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-19/coconutgrove-kitchen-1.jpg"
+        "/images/villas/villa-19/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-19/coconutgrove-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-19/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-19/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1718,25 +1746,27 @@
     "guests": 6,
     "rating": 4.82,
     "available": "Jul 20 - 24",
-    "image": "/images/villas/villa-20/tropicalhaven-exterior-1.jpg",
+    "image": "/images/villas/villa-20/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-20/tropicalhaven-exterior-1.jpg",
-        "/images/villas/villa-20/tropicalhaven-exterior-2.jpg",
-        "/images/villas/villa-20/tropicalhaven-exterior-3.jpg"
+        "/images/villas/villa-20/exterior-1.png",
+        "/images/villas/villa-20/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-20/living-room-1.png",
+        "/images/villas/villa-20/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-20/tropicalhaven-bedroom-1.jpg",
-        "/images/villas/villa-20/tropicalhaven-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-20/tropicalhaven-bathroom-1.jpg"
+        "/images/villas/villa-20/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-20/tropicalhaven-kitchen-1.jpg"
+        "/images/villas/villa-20/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-20/tropicalhaven-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-20/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-20/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1802,25 +1832,27 @@
     "guests": 6,
     "rating": 4.88,
     "available": "Aug 8 - 13",
-    "image": "/images/villas/villa-21/sunsetpoint-exterior-1.jpg",
+    "image": "/images/villas/villa-21/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-21/sunsetpoint-exterior-1.jpg",
-        "/images/villas/villa-21/sunsetpoint-exterior-2.jpg",
-        "/images/villas/villa-21/sunsetpoint-exterior-3.jpg"
+        "/images/villas/villa-21/exterior-1.png",
+        "/images/villas/villa-21/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-21/living-room-1.png",
+        "/images/villas/villa-21/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-21/sunsetpoint-bedroom-1.jpg",
-        "/images/villas/villa-21/sunsetpoint-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-21/sunsetpoint-bathroom-1.jpg"
+        "/images/villas/villa-21/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-21/sunsetpoint-kitchen-1.jpg"
+        "/images/villas/villa-21/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-21/sunsetpoint-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-21/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-21/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -1886,12 +1918,12 @@
     "guests": 4,
     "rating": 4.69,
     "available": "Sep 1 - 5",
-    "image": "/images/villas/villa-22/bluepalm-exterior-1.jpg",
+    "image": "/images/villas/villa-22/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-22/bluepalm-exterior-1.jpg",
-        "/images/villas/villa-22/bluepalm-exterior-2.jpg",
-        "/images/villas/villa-22/bluepalm-exterior-3.jpg"
+        "/images/villas/villa-22/exterior-1.png",
+        "/images/villas/villa-22/exterior-2.png",
+        "/images/villas/villa-22/exterior-3.png"
       ],
       "Bedroom": [
         "/images/villas/villa-22/bluepalm-bedroom-1.jpg",
@@ -1970,25 +2002,27 @@
     "guests": 8,
     "rating": 4.9,
     "available": "Oct 11 - 16",
-    "image": "/images/villas/villa-23/whispering-exterior-1.jpg",
+    "image": "/images/villas/villa-23/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-23/whispering-exterior-1.jpg",
-        "/images/villas/villa-23/whispering-exterior-2.jpg",
-        "/images/villas/villa-23/whispering-exterior-3.jpg"
+        "/images/villas/villa-23/exterior-1.png",
+        "/images/villas/villa-23/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-23/living-room-1.png",
+        "/images/villas/villa-23/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-23/whispering-bedroom-1.jpg",
-        "/images/villas/villa-23/whispering-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-23/whispering-bathroom-1.jpg"
+        "/images/villas/villa-23/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-23/whispering-kitchen-1.jpg"
+        "/images/villas/villa-23/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-23/whispering-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-23/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-23/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -2054,25 +2088,27 @@
     "guests": 8,
     "rating": 4.94,
     "available": "Nov 2 - 7",
-    "image": "/images/villas/villa-24/seacliff-exterior-1.jpg",
+    "image": "/images/villas/villa-24/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-24/seacliff-exterior-1.jpg",
-        "/images/villas/villa-24/seacliff-exterior-2.jpg",
-        "/images/villas/villa-24/seacliff-exterior-3.jpg"
+        "/images/villas/villa-24/exterior-1.png",
+        "/images/villas/villa-24/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-24/living-room-1.png",
+        "/images/villas/villa-24/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-24/seacliff-bedroom-1.jpg",
-        "/images/villas/villa-24/seacliff-bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-24/seacliff-bathroom-1.jpg"
+        "/images/villas/villa-24/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-24/seacliff-kitchen-1.jpg"
+        "/images/villas/villa-24/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-24/seacliff-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-24/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-24/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -2138,25 +2174,27 @@
     "guests": 8,
     "rating": 4.9,
     "available": "Dec 20 - 25",
-    "image": "/images/villas/villa-25/exterior-1.jpg",
+    "image": "/images/villas/villa-25/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-25/exterior-1.jpg",
-        "/images/villas/villa-25/exterior-2.jpg",
-        "/images/villas/villa-25/exterior-3.jpg"
+        "/images/villas/villa-25/exterior-1.png",
+        "/images/villas/villa-25/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-25/living-room-1.png",
+        "/images/villas/villa-25/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-25/bedroom-1.jpg",
-        "/images/villas/villa-25/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-25/bathroom-1.jpg"
+        "/images/villas/villa-25/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-25/harbor-kitchen-1.jpg"
+        "/images/villas/villa-25/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-25/harbor-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-25/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-25/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -2222,25 +2260,27 @@
     "guests": 4,
     "rating": 4.7,
     "available": "Jan 15 - 19",
-    "image": "/images/villas/villa-26/exterior-1.jpg",
+    "image": "/images/villas/villa-26/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-26/exterior-1.jpg",
-        "/images/villas/villa-26/exterior-2.jpg",
-        "/images/villas/villa-26/exterior-3.jpg"
+        "/images/villas/villa-26/exterior-1.png",
+        "/images/villas/villa-26/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-26/living-room-1.png",
+        "/images/villas/villa-26/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-26/bedroom-1.jpg",
-        "/images/villas/villa-26/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-26/bathroom-1.jpg"
+        "/images/villas/villa-26/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-26/coral-kitchen-1.jpg"
+        "/images/villas/villa-26/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-26/coral-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-26/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-26/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -2306,25 +2346,27 @@
     "guests": 6,
     "rating": 4.86,
     "available": "Feb 21 - 26",
-    "image": "/images/villas/villa-27/exterior-1.jpg",
+    "image": "/images/villas/villa-27/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-27/exterior-1.jpg",
-        "/images/villas/villa-27/exterior-2.jpg",
-        "/images/villas/villa-27/exterior-3.jpg"
+        "/images/villas/villa-27/exterior-1.png",
+        "/images/villas/villa-27/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-27/living-room-1.png",
+        "/images/villas/villa-27/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-27/bedroom-1.jpg",
-        "/images/villas/villa-27/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-27/bathroom-1.jpg"
+        "/images/villas/villa-27/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-27/marula-kitchen-1.jpg"
+        "/images/villas/villa-27/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-27/marula-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-27/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-27/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -2390,25 +2432,27 @@
     "guests": 2,
     "rating": 4.65,
     "available": "Mar 10 - 14",
-    "image": "/images/villas/villa-28/exterior-1.jpg",
+    "image": "/images/villas/villa-28/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-28/exterior-1.jpg",
-        "/images/villas/villa-28/exterior-2.jpg",
-        "/images/villas/villa-28/exterior-3.jpg"
+        "/images/villas/villa-28/exterior-1.png",
+        "/images/villas/villa-28/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-28/living-room-1.png",
+        "/images/villas/villa-28/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-28/bedroom-1.jpg",
-        "/images/villas/villa-28/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-28/bathroom-1.jpg"
+        "/images/villas/villa-28/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-28/driftwood-kitchen-1.jpg"
+        "/images/villas/villa-28/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-28/driftwood-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-28/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-28/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -2474,25 +2518,27 @@
     "guests": 4,
     "rating": 4.78,
     "available": "Apr 6 - 10",
-    "image": "/images/villas/villa-29/exterior-1.jpg",
+    "image": "/images/villas/villa-29/exterior-1.png",
     "gallery": {
       "Exterior": [
-        "/images/villas/villa-29/exterior-1.jpg",
-        "/images/villas/villa-29/exterior-2.jpg",
-        "/images/villas/villa-29/exterior-3.jpg"
+        "/images/villas/villa-29/exterior-1.png",
+        "/images/villas/villa-29/exterior-2.png"
+      ],
+      "Living Room": [
+        "/images/villas/villa-29/living-room-1.png",
+        "/images/villas/villa-29/living-room-2.png"
       ],
       "Bedroom": [
-        "/images/villas/villa-29/bedroom-1.jpg",
-        "/images/villas/villa-29/bedroom-2.jpg"
-      ],
-      "Bathroom": [
-        "/images/villas/villa-29/bathroom-1.jpg"
+        "/images/villas/villa-29/bedroom-1.png"
       ],
       "Kitchen": [
-        "/images/villas/villa-29/harbor-kitchen-1.jpg"
+        "/images/villas/villa-29/kitchen-1.png"
       ],
-      "Power System": [
-        "/images/villas/villa-29/harbor-solar-1.jpg"
+      "Bathroom": [
+        "/images/villas/villa-29/bathroom-1.png"
+      ],
+      "Pool": [
+        "/images/villas/villa-29/pool-1.png"
       ]
     },
     "fullAmenities": [
@@ -2562,8 +2608,7 @@
     "gallery": {
       "Exterior": [
         "/images/villas/villa-30/kinondo-exterior-1.jpg",
-        "/images/villas/villa-30/kinondo-cool-breeze-drone.jpg",
-        "/images/villas/villa-30/kinondo-best-holiday-villa-near-diani-beach.webp"
+        "/images/villas/villa-30/kinondo-cool-breeze-drone.jpg"
       ],
       "Bedroom": [
         "/images/villas/villa-30/kinondo-bedroom-1.jpg",
@@ -2574,9 +2619,6 @@
       ],
       "Kitchen": [
         "/images/villas/villa-30/kinondo-kitchen-1.jpg"
-      ],
-      "Power System": [
-        "/images/villas/villa-30/kinondo-solar-1.jpg"
       ]
     },
     "fullAmenities": [
